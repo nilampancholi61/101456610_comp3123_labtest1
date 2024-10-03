@@ -5,7 +5,7 @@
 
 const resolvedPromise = () => {
     setTimeout(() => {
-        let success = {'resolved'};
+        let success = {'message': 'resolved'};
         console.log(success);
     
     }, 500)
@@ -14,7 +14,7 @@ const resolvedPromise = () => {
 const rejectedPromise = () => {
     setTimeout(() => {
         try {
-            throw new Error;{'error'};
+            throw new Error('error : delayed');
         
         }catch (e) {
             console.error(e);
